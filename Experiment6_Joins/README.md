@@ -156,7 +156,7 @@ WHERE p.date_of_birth > '1990-01-01';
 
 **Output:**
 
-
+![Screenshot](join8.png)
 
 **Question 8**
 ---

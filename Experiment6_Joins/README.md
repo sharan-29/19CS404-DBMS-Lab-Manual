@@ -160,39 +160,50 @@ WHERE p.date_of_birth > '1990-01-01';
 
 **Question 8**
 ---
--- Paste Question 8 here
+![Screenshot](join8que.png)
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT t.*
+FROM test_results t
+INNER JOIN patients p
+ON t.patient_id = p.patient_id
+WHERE p.first_name = 'Alice';
 ```
 
 **Output:**
 
-![Output8](output.png)
+![Screenshot](8ans.png)
 
 **Question 9**
 ---
--- Paste Question 9 here
+![Screenshot](9que.png)
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT p.first_name AS patient_name, a.*
+FROM patients p
+INNER JOIN appointments a
+ON p.patient_id = a.patient_id;
 ```
 
 **Output:**
 
-![Output9](output.png)
+![Screenshot](9ans.png)
 
 **Question 10**
 ---
--- Paste Question 10 here
+![Screenshot](10que.png)
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT c.cust_name, s.name
+FROM customer c
+LEFT JOIN salesman s
+ON c.salesman_id = s.salesman_id
+WHERE c.city = s.city;
 ```
 
 **Output:**
 
-![Output10](output.png)
+![Screenshot](10ans.png)
 
 
 ## RESULT
